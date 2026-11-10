@@ -1,0 +1,44 @@
+{
+  "captured_at": "2026-11-10T04:38:08.409647+00:00",
+  "elapsed_seconds": 45.020178664999776,
+  "snapshot_number": 2,
+  "session_started_at": "2026-11-10T04:37:22.771598+00:00",
+  "run_id": "resume-audit-20261110a",
+  "batch_id": 0,
+  "source": "http://127.0.0.1:43555/feed.xml",
+  "controlled": true,
+  "rows": [
+    {
+      "batch_id": 0,
+      "@timestamp": "2026-11-10T04:36:48.695695080Z",
+      "run_id": "resume-audit-20261110a",
+      "label": "ORG",
+      "count": 1,
+      "snapshot_size": 2,
+      "entity": "microsoft",
+      "@version": "1",
+      "version": 1,
+      "observed_at": "2026-11-10T04:36:48.220986+00:00",
+      "event": {
+        "original": "{\"entity\":\"microsoft\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"resume-audit-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":2,\"observed_at\":\"2026-11-10T04:36:48.220986+00:00\"}"
+      }
+    },
+    {
+      "batch_id": 0,
+      "@timestamp": "2026-11-10T04:36:48.697086153Z",
+      "run_id": "resume-audit-20261110a",
+      "label": "GPE",
+      "count": 1,
+      "snapshot_size": 2,
+      "entity": "london",
+      "@version": "1",
+      "version": 1,
+      "observed_at": "2026-11-10T04:36:48.220986+00:00",
+      "event": {
+        "original": "{\"entity\":\"london\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"resume-audit-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":2,\"observed_at\":\"2026-11-10T04:36:48.220986+00:00\"}"
+      }
+    }
+  ],
+  "kibana_captured_at": "2026-11-10T04:38:16.563839+00:00",
+  "kibana_render_verified": true
+}

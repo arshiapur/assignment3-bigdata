@@ -1,0 +1,7 @@
+{
+  "run_id": "resume-audit-20261110a",
+  "feed": "http://127.0.0.1:43555/feed.xml",
+  "input_topic": "articles-resume-audit-20261110a",
+  "output_topic": "entity-counts-resume-audit-20261110a",
+  "controlled": true
+}

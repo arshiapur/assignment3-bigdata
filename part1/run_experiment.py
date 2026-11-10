@@ -16,6 +16,34 @@ def utc():
     return datetime.now(timezone.utc).isoformat()
 
 
+def previous_observations(work, run_id):
+    """Reserve every existing capture number, including interrupted exports."""
+    observations = []
+    last_number = 0
+    for path in sorted(work.glob('snapshot-*.json')):
+        try:
+            number = int(path.stem.removeprefix('snapshot-'))
+        except ValueError:
+            continue
+        last_number = max(last_number, number)
+        try:
+            observation = json.loads(path.read_text())
+        except (ValueError, OSError):
+            continue
+        if observation.get('run_id') != run_id:
+            raise ValueError(f'{path.name} belongs to a different run')
+        prefix = work / f'snapshot-{number:02d}'
+        if not observation.get('kibana_render_verified') or not all(
+            Path(str(prefix) + suffix).is_file()
+            for suffix in ('.csv', '.png', '-kibana.png')
+        ):
+            continue
+        observation['snapshot_number'] = number
+        observations.append(observation)
+    observations.sort(key=lambda observation: observation['snapshot_number'])
+    return observations, last_number + 1
+
+
 def api(base, method, path, **kwargs):
     response = requests.request(method, base.rstrip('/') + path, timeout=60, **kwargs)
     response.raise_for_status()
@@ -105,7 +133,7 @@ def export(a, number, elapsed, meta, rows, dashboard):
     for row in rows:
         totals[row['entity']] = totals.get(row['entity'], 0) + row['count']
     top = sorted(totals.items(), key=lambda v: (-v[1], v[0]))[:10]
-    payload = {'captured_at': utc(), 'elapsed_seconds': elapsed, 'run_id': a.run_id, 'batch_id': meta['batch_id'], 'source': a.feed, 'controlled': a.controlled, 'rows': rows}
+    payload = {'captured_at': utc(), 'elapsed_seconds': elapsed, 'snapshot_number': number, 'session_started_at': getattr(a, 'session_started_at', None), 'run_id': a.run_id, 'batch_id': meta['batch_id'], 'source': a.feed, 'controlled': a.controlled, 'rows': rows}
     prefix.with_suffix('.json').write_text(json.dumps(payload, indent=2))
     with prefix.with_suffix('.csv').open('w', newline='') as f:
         writer = csv.writer(f); writer.writerow(['entity', 'label', 'count', 'batch_id'])
@@ -170,6 +198,10 @@ def main():
     if manifest_file.exists() and json.loads(manifest_file.read_text()) != manifest:
         p.error('existing work directory belongs to a different experiment')
     manifest_file.write_text(json.dumps(manifest, indent=2))
+    try:
+        observations, first_number = previous_observations(work, a.run_id)
+    except ValueError as exc:
+        p.error(str(exc))
     dashboard = prepare(a)
     print(dashboard, flush=True)
     if a.prepare_only:
@@ -193,12 +225,13 @@ def main():
                 java_proxy.extend([f'-D{protocol}.proxyHost={parsed.hostname}', f'-D{protocol}.proxyPort={parsed.port or 80}'])
     if java_proxy:
         child_env['SPARK_SUBMIT_OPTS'] = child_env.get('SPARK_SUBMIT_OPTS', '') + ' ' + ' '.join(java_proxy)
-    children = []; logs = []; observations = []; start = time.monotonic(); started_at = utc()
+    children = []; logs = []; start = time.monotonic(); started_at = utc()
+    a.session_started_at = started_at
     try:
         for name, command in zip(('spark', 'producer'), commands):
             log = (work / (name + '.log')).open('a'); logs.append(log)
             children.append(subprocess.Popen(command, stdout=log, stderr=subprocess.STDOUT, env=child_env))
-        for number, deadline in enumerate(intervals, 1):
+        for number, deadline in enumerate(intervals, first_number):
             while time.monotonic() - start < deadline:
                 if any(child.poll() is not None for child in children):
                     raise RuntimeError('A pipeline child exited; inspect logs')
@@ -227,13 +260,14 @@ def main():
 
 
 def write_report(work, started_at, observations, a):
-    lines = ['# ' + ('CONTROLLED TEST ONLY' if a.controlled else 'RSS observations'), '', f'Source: {a.feed}', f'Runner started: {started_at}', '', 'Elapsed times include startup and indexing delays. Counts are cumulative, not sliding-window counts. The first RSS poll includes existing feed backlog.', '']
-    for number, observation in enumerate(observations, 1):
+    lines = ['# ' + ('CONTROLLED TEST ONLY' if a.controlled else 'RSS observations'), '', f'Source: {a.feed}', f'Latest runner invocation started: {started_at}', '', 'Each elapsed time is measured from its own runner invocation, including startup and indexing delays. Absolute timestamps distinguish resumed sessions. Counts are cumulative, not sliding-window counts. The first RSS poll includes existing feed backlog.', '']
+    for position, observation in enumerate(observations, 1):
+        number = observation.get('snapshot_number', position)
         totals = {}
         for row in observation['rows']:
             totals[row['entity']] = totals.get(row['entity'], 0) + row['count']
         leaders = sorted(totals.items(), key=lambda x: (-x[1], x[0]))[:10]
-        lines += [f"## Observation {number}: {observation['elapsed_seconds']:.1f} seconds", f"Captured: {observation['captured_at']}; batch {observation['batch_id']}", '', f'![Top entities](snapshot-{number:02d}.png)', '', 'Leaders: ' + ', '.join(f'{e} ({n})' for e, n in leaders), '']
+        lines += [f"## Observation {number}: {observation['elapsed_seconds']:.1f} seconds", f"Captured: {observation['captured_at']}; batch {observation['batch_id']}", f"Runner invocation started: {observation.get('session_started_at') or 'not recorded; use absolute capture timestamp'}", '', f'![Top entities](snapshot-{number:02d}.png)', '', f'![Actual Kibana dashboard](snapshot-{number:02d}-kibana.png)', '', 'Leaders: ' + ', '.join(f'{e} ({n})' for e, n in leaders), '']
     audit = work / 'producer' / 'articles.jsonl'
     acknowledged = len(audit.read_text().splitlines()) if audit.exists() else 0
     lines += [f'Audit contains {acknowledged} acknowledged article records across this work directory. This is not a processed-article total; Spark and Elasticsearch can lag.', '', 'Interpretation requires reviewing the source articles: high counts indicate repeated mentions in sampled titles/summaries, not sentiment or public opinion. spaCy errors, entity aliases, repeated title/summary text, source coverage, initial backlog and processing lag limit the result. See producer/polls.jsonl to distinguish first-poll backlog from subsequent discoveries.']

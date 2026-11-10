@@ -1,0 +1,12 @@
+{
+  "completed_at": "2026-11-10T04:38:17.255665+00:00",
+  "controlled": true,
+  "checks": [
+    "two real runner invocations with same run/topics/checkpoint",
+    "producer restart does not republish the fixture",
+    "checkpoint preserves entity counts",
+    "original PNG/CSV/JSON/Kibana screenshot bytes unchanged",
+    "second capture uses a new number",
+    "report includes captures from both sessions"
+  ]
+}

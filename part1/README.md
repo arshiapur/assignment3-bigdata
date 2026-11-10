@@ -36,10 +36,10 @@ and loopback host ports. Security is disabled for local development services;
 container traffic uses the private Compose network. Do not expose these services
 publicly. Kafka uses 19092 on the host, kafka:9092 within Compose.
 
-`requirements.txt` pins direct versions from the supplied context; it is not a
-resolved transitive lock. A previous lock was not provided, so none is invented.
-To record your actual installed environment, run `python -m pip freeze >
-requirements.lock.txt` after a successful installation. Keep TLS verification enabled.
+`requirements.txt` pins direct dependencies. `requirements.lock.txt` records the
+resolved versions installed and tested in this session; setup.sh installs that lock
+when present. To deliberately refresh it after a successful new installation, run
+`python -m pip freeze > requirements.lock.txt`. Keep TLS verification enabled.
 The Spark connector is Scala 2.13 / Spark 4.0.1, not the instructor's old 2.12 example.
 
 ## Live experiment (optional future collection)
@@ -72,7 +72,10 @@ Use `python run_experiment.py --help` and `python pipeline.py --help` for all op
 State, checkpoints, work directories and service endpoints are configurable.
 
 For a resume, use the same run ID, work directory, feed and topics. Elapsed time in
-each runner invocation restarts at zero; inspect audit timestamps for gaps. Use a
+each runner invocation restarts at zero; inspect audit timestamps for gaps. Existing
+capture files are preserved, numbering continues after the highest existing capture,
+and the report includes complete captures from earlier sessions. Interrupted exports
+are retained but omitted from the report until they have complete capture evidence. Use a
 fresh run ID and directory for each independent experiment. Do not run two Spark
 queries concurrently against the same checkpoint. Do not delete checkpoints to
 resume, or mix an old SQLite state with fresh input topics.
@@ -173,3 +176,16 @@ coursework run, the default command captures at 15/30/45/60 minutes. An unchange
 feed and unchanged plots are valid; initial stories are not republished to change
 the chart. The UI's global time picker is not applied to the Vega query: it shows
 cumulative counts for the selected run ID, including its initial backlog.
+
+Final audit checks for resuming the actual runner and rejecting stale sink versions
+(use fresh IDs/directories, with local services already running):
+
+```bash
+python tests/resume_experiment.py --run-id resume-check-001 --work-dir validation/resume-check-001
+python tests/sink_versions.py --run-id sink-version-check-001
+```
+
+The resume test executes two controlled experiment sessions and checks that the
+first session's PNG/CSV/JSON and real Kibana screenshot remain byte-for-byte intact.
+The sink test publishes version 1, version 2, then a stale version 1 and an equal
+version 2 retry, and checks that Elasticsearch retains the newer count.

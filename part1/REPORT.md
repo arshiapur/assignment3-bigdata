@@ -78,3 +78,14 @@ Limitations include spaCy recognition and label errors, unresolved aliases such 
 Docker image extraction failed with a no-space error in the cloud’s rootless Docker store. The successful run used checksum-verified official local distributions of Kafka 3.9.1 and Elasticsearch/Kibana/Logstash 8.17.0 via local_stack.py. The provided Compose configuration parses, but actual Compose startup was not validated. README.md documents both setups and a full-length experiment command. requirements.lock.txt records the installed Python environment. All service ports were bound to loopback.
 
 Controlled checks passed for producer acknowledgement and SQLite restart deduplication; entity occurrence counts; duplicate IDs across micro-batches; Spark checkpoint restart; replay-safe indexing; and actual rendered Kibana bars. See validation/STATUS.md. The old session’s unavailable binary plots were not recovered; the supplied controlled and live images were newly captured during this session.
+
+## Final implementation audit
+
+A follow-up audit fixed capture overwriting when resuming an experiment. Two actual
+controlled runner sessions then confirmed that the same checkpoint/run/topics can
+be resumed while preserving the original PNG/CSV/JSON/Kibana screenshot bytes,
+continuing capture numbering and retaining both sessions in the report. A separate
+sink test confirmed that a stale snapshot cannot overwrite a newer Elasticsearch
+count. Five unit/regression tests pass, and the tested dependency lock is now the
+installer's default. See validation/STATUS.md for evidence and the remaining
+Docker startup limitation. The BBC observation evidence above is unchanged.
