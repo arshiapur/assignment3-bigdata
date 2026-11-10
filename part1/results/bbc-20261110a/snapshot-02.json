@@ -1,0 +1,1167 @@
+{
+  "captured_at": "2026-11-10T04:28:18.474260+00:00",
+  "elapsed_seconds": 240.0237814269999,
+  "run_id": "bbc-20261110a",
+  "batch_id": 0,
+  "source": "https://feeds.bbci.co.uk/news/world/rss.xml",
+  "controlled": false,
+  "rows": [
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "main market square",
+      "batch_id": 0,
+      "label": "FAC",
+      "event": {
+        "original": "{\"entity\":\"main market square\",\"label\":\"FAC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.823591476Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "china",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"china\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.827563629Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "huang",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"huang\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.829927557Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "pacific ocean",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"pacific ocean\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.830485863Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "lindsay clancy's",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"lindsay clancy's\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.831031897Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "buenos aires",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"buenos aires\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.834904455Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "us",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"us\",\"label\":\"GPE\",\"count\":8,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.842057924Z",
+      "snapshot_size": 77,
+      "count": 8
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "florida beach",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"florida beach\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.842920044Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "defence",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"defence\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.845189978Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "greek",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"greek\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.846926100Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "ufc",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"ufc\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.861335463Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "france",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"france\",\"label\":\"GPE\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.865504953Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "eyewitnesses",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"eyewitnesses\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.869200473Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "demir celik",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"demir celik\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.871922936Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "egypt",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"egypt\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.872731567Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "spain",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"spain\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.875364404Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "kyiv",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"kyiv\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.876424202Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "washington",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"washington\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.877180776Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "krakow",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"krakow\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.877808301Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "qantas",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"qantas\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.878658960Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "india",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"india\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.879154830Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "trump",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"trump\",\"label\":\"ORG\",\"count\":4,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.880472546Z",
+      "snapshot_size": 77,
+      "count": 4
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "jensen huang's",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"jensen huang's\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.883238400Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "bbc washington",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"bbc washington\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.884060045Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "bbc",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"bbc\",\"label\":\"ORG\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.884521662Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "moscow",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"moscow\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.885044833Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "trump",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"trump\",\"label\":\"PERSON\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.934998108Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "daniel bush",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"daniel bush\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.953288809Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "charlie kirk",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"charlie kirk\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.980618098Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "aliaga",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"aliaga\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:24:59.983522700Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "marseille",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"marseille\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.019770313Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "senegal",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"senegal\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.021771868Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "nazi",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"nazi\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.022632125Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "jensanity",
+      "batch_id": 0,
+      "label": "WORK_OF_ART",
+      "event": {
+        "original": "{\"entity\":\"jensanity\",\"label\":\"WORK_OF_ART\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.023182938Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "jensen huang",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"jensen huang\",\"label\":\"PERSON\",\"count\":4,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.026160405Z",
+      "snapshot_size": 77,
+      "count": 4
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "nvidia",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"nvidia\",\"label\":\"GPE\",\"count\":5,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.026963225Z",
+      "snapshot_size": 77,
+      "count": 5
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "hegseth",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"hegseth\",\"label\":\"PERSON\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.029011317Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "californian",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"californian\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.031079045Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "russia",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"russia\",\"label\":\"GPE\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.034063976Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "krakow",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"krakow\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.036790416Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "democrats",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"democrats\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.037895868Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "dana white",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"dana white\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.038431292Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "europe",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"europe\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.039037597Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "african",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"african\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.040171162Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "hitler",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"hitler\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.040737283Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "zimbabweans",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"zimbabweans\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.041724916Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "australian",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"australian\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.042261111Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "the united arab emirates",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"the united arab emirates\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.042721366Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "republicans",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"republicans\",\"label\":\"NORP\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.043120927Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "leo xiv",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"leo xiv\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.046670887Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "zoe kleinman",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"zoe kleinman\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.047463418Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "french",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"french\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.048715802Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "chinese",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"chinese\",\"label\":\"NORP\",\"count\":7,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.049595185Z",
+      "snapshot_size": 77,
+      "count": 7
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "turkey",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"turkey\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.051136686Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "tyler robinson",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"tyler robinson\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.051651331Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "argentina",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"argentina\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.052050051Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "polish",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"polish\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.052448421Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "sudanese",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"sudanese\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.052899118Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "republican",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"republican\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.053425144Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "ai",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"ai\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.053902049Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "alice huang",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"alice huang\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.054317080Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "nvidia",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"nvidia\",\"label\":\"ORG\",\"count\":2,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.054732601Z",
+      "snapshot_size": 77,
+      "count": 2
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "canary islands",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"canary islands\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.055141129Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "south africa",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"south africa\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.065822867Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "thomas massie",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"thomas massie\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.066713320Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "tons",
+      "batch_id": 0,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"tons\",\"label\":\"PERSON\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.067278098Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "fbi",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"fbi\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.070294457Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "iran",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"iran\",\"label\":\"GPE\",\"count\":3,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.070944153Z",
+      "snapshot_size": 77,
+      "count": 3
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "crete",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"crete\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.072232184Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "ukraine",
+      "batch_id": 0,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"ukraine\",\"label\":\"GPE\",\"count\":3,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.072720400Z",
+      "snapshot_size": 77,
+      "count": 3
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "white house",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"white house\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.073883729Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "the middle east",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"the middle east\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.076220006Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "eagle",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"eagle\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.076980257Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "latin america",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"latin america\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.077411527Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "truth social",
+      "batch_id": 0,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"truth social\",\"label\":\"ORG\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.077966468Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "germans",
+      "batch_id": 0,
+      "label": "NORP",
+      "event": {
+        "original": "{\"entity\":\"germans\",\"label\":\"NORP\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.078795627Z",
+      "snapshot_size": 77,
+      "count": 1
+    },
+    {
+      "run_id": "bbc-20261110a",
+      "entity": "atlantic",
+      "batch_id": 0,
+      "label": "LOC",
+      "event": {
+        "original": "{\"entity\":\"atlantic\",\"label\":\"LOC\",\"count\":1,\"run_id\":\"bbc-20261110a\",\"batch_id\":0,\"version\":1,\"snapshot_size\":77,\"observed_at\":\"2026-11-10T04:24:59.400012+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:24:59.400012+00:00",
+      "version": 1,
+      "@timestamp": "2026-11-10T04:25:00.079978212Z",
+      "snapshot_size": 77,
+      "count": 1
+    }
+  ],
+  "kibana_captured_at": "2026-11-10T04:28:26.583956+00:00",
+  "kibana_render_verified": true
+}

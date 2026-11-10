@@ -1,0 +1,85 @@
+{
+  "captured_at": "2026-11-10T04:23:57.067425+00:00",
+  "elapsed_seconds": 84.833565271,
+  "run_id": "smoke-20261110a",
+  "batch_id": 2,
+  "source": "CONTROLLED TEXT FIXTURE",
+  "controlled": true,
+  "rows": [
+    {
+      "run_id": "smoke-20261110a",
+      "entity": "barack obama",
+      "batch_id": 2,
+      "label": "PERSON",
+      "event": {
+        "original": "{\"entity\":\"barack obama\",\"label\":\"PERSON\",\"count\":2,\"run_id\":\"smoke-20261110a\",\"batch_id\":2,\"version\":3,\"snapshot_size\":5,\"observed_at\":\"2026-11-10T04:23:54.171881+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:23:54.171881+00:00",
+      "version": 3,
+      "@timestamp": "2026-11-10T04:23:54.766874096Z",
+      "snapshot_size": 5,
+      "count": 2
+    },
+    {
+      "run_id": "smoke-20261110a",
+      "entity": "paris",
+      "batch_id": 2,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"paris\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"smoke-20261110a\",\"batch_id\":2,\"version\":3,\"snapshot_size\":5,\"observed_at\":\"2026-11-10T04:23:54.171881+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:23:54.171881+00:00",
+      "version": 3,
+      "@timestamp": "2026-11-10T04:23:54.770866643Z",
+      "snapshot_size": 5,
+      "count": 1
+    },
+    {
+      "run_id": "smoke-20261110a",
+      "entity": "france",
+      "batch_id": 2,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"france\",\"label\":\"GPE\",\"count\":1,\"run_id\":\"smoke-20261110a\",\"batch_id\":2,\"version\":3,\"snapshot_size\":5,\"observed_at\":\"2026-11-10T04:23:54.171881+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:23:54.171881+00:00",
+      "version": 3,
+      "@timestamp": "2026-11-10T04:23:54.774372756Z",
+      "snapshot_size": 5,
+      "count": 1
+    },
+    {
+      "run_id": "smoke-20261110a",
+      "entity": "microsoft",
+      "batch_id": 2,
+      "label": "ORG",
+      "event": {
+        "original": "{\"entity\":\"microsoft\",\"label\":\"ORG\",\"count\":3,\"run_id\":\"smoke-20261110a\",\"batch_id\":2,\"version\":3,\"snapshot_size\":5,\"observed_at\":\"2026-11-10T04:23:54.171881+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:23:54.171881+00:00",
+      "version": 3,
+      "@timestamp": "2026-11-10T04:23:54.777890605Z",
+      "snapshot_size": 5,
+      "count": 3
+    },
+    {
+      "run_id": "smoke-20261110a",
+      "entity": "london",
+      "batch_id": 2,
+      "label": "GPE",
+      "event": {
+        "original": "{\"entity\":\"london\",\"label\":\"GPE\",\"count\":3,\"run_id\":\"smoke-20261110a\",\"batch_id\":2,\"version\":3,\"snapshot_size\":5,\"observed_at\":\"2026-11-10T04:23:54.171881+00:00\"}"
+      },
+      "@version": "1",
+      "observed_at": "2026-11-10T04:23:54.171881+00:00",
+      "version": 3,
+      "@timestamp": "2026-11-10T04:23:54.778697Z",
+      "snapshot_size": 5,
+      "count": 3
+    }
+  ]
+}

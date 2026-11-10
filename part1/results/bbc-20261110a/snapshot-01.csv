@@ -1,0 +1,78 @@
+entity,label,count,batch_id
+main market square,FAC,1,0
+china,GPE,1,0
+huang,PERSON,1,0
+pacific ocean,LOC,1,0
+lindsay clancy's,PERSON,1,0
+buenos aires,PERSON,1,0
+us,GPE,8,0
+florida beach,GPE,1,0
+defence,ORG,1,0
+greek,NORP,1,0
+ufc,ORG,1,0
+france,GPE,2,0
+eyewitnesses,GPE,1,0
+demir celik,PERSON,1,0
+egypt,GPE,1,0
+spain,GPE,1,0
+kyiv,PERSON,1,0
+washington,GPE,1,0
+krakow,GPE,1,0
+qantas,ORG,1,0
+india,GPE,1,0
+trump,ORG,4,0
+jensen huang's,PERSON,1,0
+bbc washington,ORG,1,0
+bbc,ORG,2,0
+moscow,GPE,1,0
+trump,PERSON,2,0
+daniel bush,PERSON,1,0
+charlie kirk,PERSON,1,0
+aliaga,GPE,1,0
+marseille,ORG,1,0
+senegal,GPE,1,0
+nazi,NORP,1,0
+jensanity,WORK_OF_ART,1,0
+jensen huang,PERSON,4,0
+nvidia,GPE,5,0
+hegseth,PERSON,2,0
+californian,NORP,1,0
+russia,GPE,2,0
+krakow,PERSON,1,0
+democrats,NORP,1,0
+dana white,PERSON,1,0
+europe,LOC,1,0
+african,NORP,1,0
+hitler,PERSON,1,0
+zimbabweans,NORP,1,0
+australian,NORP,1,0
+the united arab emirates,GPE,1,0
+republicans,NORP,2,0
+leo xiv,PERSON,1,0
+zoe kleinman,PERSON,1,0
+french,NORP,1,0
+chinese,NORP,7,0
+turkey,GPE,1,0
+tyler robinson,PERSON,1,0
+argentina,GPE,1,0
+polish,NORP,1,0
+sudanese,NORP,1,0
+republican,NORP,1,0
+ai,GPE,1,0
+alice huang,PERSON,1,0
+nvidia,ORG,2,0
+canary islands,LOC,1,0
+south africa,GPE,1,0
+thomas massie,PERSON,1,0
+tons,PERSON,1,0
+fbi,ORG,1,0
+iran,GPE,3,0
+crete,ORG,1,0
+ukraine,GPE,3,0
+white house,ORG,1,0
+the middle east,LOC,1,0
+eagle,ORG,1,0
+latin america,LOC,1,0
+truth social,ORG,1,0
+germans,NORP,1,0
+atlantic,LOC,1,0

@@ -1,0 +1,7 @@
+{
+  "run_id": "bbc-20261110a",
+  "feed": "https://feeds.bbci.co.uk/news/world/rss.xml",
+  "input_topic": "articles-bbc-20261110a",
+  "output_topic": "entity-counts-bbc-20261110a",
+  "controlled": false
+}

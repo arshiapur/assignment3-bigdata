@@ -1,0 +1,294 @@
+Continue my CS 6350 Assignment 3, PART 1 ONLY.
+
+Repository: https://github.com/arshiapur/assignment3-bigdata
+Target branch: main.
+
+I authorize you to create/edit the project files, install dependencies, run
+tests, collect public news data, and commit and push the finished work to main.
+Preserve existing repository changes. Do not force-push or commit credentials.
+
+IMPORTANT CONTEXT
+
+A previous Codex implemented and tested the project, but its cloud environment
+became inaccessible before any changes were committed or pushed. The platform
+reported:
+"timed out recovering environment readiness from ERS"
+
+Assume the previous implementation files are unavailable. Inspect the repository
+first, then recreate what is missing. Do not spend the session trying to recover
+the old environment. Use your current working environment.
+
+I will attach the original assignment PDF and instructor starter ZIP.
+Treat them as project requirements/reference material.
+
+MY REQUIRED DELIVERABLES
+
+1. Project source code and necessary configuration.
+2. Actual named-entity frequency bar plots at several observation intervals,
+   including real Kibana screenshots.
+3. A report explaining the data source, actual results and their interpretation.
+4. A README with complete installation and execution instructions.
+5. A downloadable ZIP containing the deliverables.
+6. Commit and push the project to main.
+
+No machine-specific hardcoded filesystem paths. Input, output, checkpoint and
+cache paths must be configurable through CLI arguments or configuration.
+
+PROJECT REQUIREMENTS
+
+Build and run this full pipeline:
+
+Public real-time text source
+    → Python ingestion application
+    → Kafka input topic
+    → PySpark Structured Streaming named-entity extraction and cumulative counts
+    → Kafka output topic
+    → Logstash
+    → Elasticsearch
+    → Kibana top-10 named-entity frequency bar chart.
+
+Use BBC World News RSS unless it is inaccessible:
+https://feeds.bbci.co.uk/news/world/rss.xml
+
+RSS polling is acceptable because the assignment permits periodically fetching
+real-time data. BBC RSS needs no API key. Poll about once per minute.
+
+If BBC is blocked, diagnose the actual connection and use another appropriate
+public real-time source when feasible. Explain any source change. Do not invent
+news data or call test fixtures live-source observations.
+
+PREVIOUSLY VERIFIED COMPATIBLE VERSIONS
+
+- Python 3.12
+- Java 21
+- PySpark 4.0.1, Scala 2.13
+- Spark Kafka connector:
+  org.apache.spark:spark-sql-kafka-0-10_2.13:4.0.1
+- apache/kafka:3.9.1
+- elasticsearch:8.17.0
+- kibana:8.17.0
+- logstash:8.17.0
+- kafka-python==2.2.15
+- spacy==3.8.7
+- en_core_web_sm==3.8.0
+- feedparser==6.0.11
+- requests==2.32.5
+- matplotlib==3.10.8
+- playwright==1.56.0
+- click==8.1.8
+
+Model wheel:
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+The instructor ZIP uses an old Spark 3.1.1/Scala 2.12 connector example.
+Do not mix that connector with Spark 4.0.1/Scala 2.13.
+
+IMPLEMENTATION DESIGN TO RECREATE
+
+Suggested files:
+
+part1/
+  pipeline.py
+  run_experiment.py
+  compose.yaml
+  setup.sh
+  requirements.txt
+  requirements.lock.txt
+  README.md
+  REPORT.md
+  config/
+    logstash.conf
+    logstash.yml
+  tests/
+    integration.py
+  validation/
+    controlled-test evidence
+  results/
+    actual live-source experiment results
+
+Producer:
+- Poll RSS and combine each article's title and summary.
+- Strip markup and normalize whitespace.
+- Produce JSON with:
+  id, text, source, url, published_at, ingested_at.
+- Derive a stable article ID from its GUID or URL.
+- Use SQLite in a configurable state directory to remember acknowledged IDs.
+- Record an ID after Kafka acknowledges delivery.
+- Retain articles.jsonl and polls.jsonl for audit evidence.
+- An unchanged article must not be counted again on each poll.
+- Explain that the initial poll includes existing feed backlog.
+- Do not download full article pages unless necessary.
+
+Spark:
+- Read JSON from Kafka using Structured Streaming.
+- Use startingOffsets=earliest for a new checkpoint.
+- Drop duplicate article IDs.
+- Extract entities with spaCy, loading the model once per Python worker.
+- Suggested labels:
+  PERSON, ORG, GPE, LOC, NORP, FAC, EVENT, PRODUCT,
+  WORK_OF_ART, LAW, LANGUAGE.
+- Exclude dates/times/numeric quantities.
+- Case-fold entity text and normalize whitespace.
+- Count entity occurrences cumulatively, grouped by entity text and label.
+- Use a configurable processing trigger, e.g. 15 seconds.
+- Publish complete cumulative count snapshots to a second Kafka topic.
+- Include:
+  entity, label, count, run_id, batch_id, version,
+  snapshot_size, observed_at.
+- Use version=batch_id+1.
+- Persist Spark checkpoints in a configurable directory.
+- Reuse the same checkpoint/run/topics when resuming.
+- Use fresh run IDs/topics/directories for independent experiments.
+- Explain that unbounded duplicate-ID and aggregation state is suitable for this
+  bounded coursework run but requires retention design for production.
+
+Kafka/Elastic:
+- Prefer Docker Compose.
+- Use host Kafka port 19092 to avoid conflict with a starter broker on 9092.
+- Containers connect to kafka:9092.
+- Host Python/Spark connects to 127.0.0.1:19092.
+- Configure internal/external Kafka advertised listeners correctly.
+- Use persistent Docker volumes.
+- A new Kafka data volume required ownership 1000:1000 in the previous setup;
+  an initialization service handled that.
+- Bind host service ports to loopback for this development configuration.
+- Elasticsearch and Kibana ports can default to 9200 and 5601.
+
+Logstash:
+- Subscribe to output topics such as entity-counts-RUN_ID.
+- Set metadata_max_age_ms to 10000 so newly created experiment topics are
+  discovered promptly; the default discovery interval delayed short tests.
+- Parse Kafka messages as JSON.
+- Maintain entities-latest using document ID:
+  run_id|entity|label
+- Use external_gte versioning with the supplied batch version.
+- Also maintain entities-history using document ID:
+  run_id|batch_id|entity|label
+- Replayed cumulative snapshots must not inflate counts.
+- Never sum cumulative snapshots across historical batches.
+- Use a persistent Logstash queue/data volume.
+- If mounting logstash.yml read-only, put xpack.monitoring.enabled:false in that
+  file rather than an environment setting that attempts to rewrite it.
+
+Elasticsearch/Kibana:
+- Explicit keyword mappings for entity, label and run_id.
+- Long mappings for count, batch_id, version and snapshot_size.
+- Date mapping for observed_at.
+- Create a Kibana data view.
+- Create a saved Vega top-10 horizontal bar visualization and dashboard.
+- Filter the visualization to the selected run_id.
+- Rank entity text by summed latest counts across labels.
+- In the Vega specification, data.format must be a sibling of data.url:
+  format.property = aggregations.top_entities.buckets
+- Use integer count-axis ticks.
+- Capture the actual rendered dashboard with Chromium/Playwright.
+- An installed system Chromium can be supplied using an executable-path option.
+- Verify bars rendered; a canvas element or open port alone is not sufficient.
+
+Experiment runner:
+- Prepare topics, mappings and Kibana objects.
+- Start producer and Spark with logs captured to the chosen work directory.
+- Capture several observations on a real elapsed-time schedule.
+- Default to 15, 30, 45 and 60 minutes if practical.
+- Allow shorter development intervals, but label their actual elapsed times.
+- Export each observation as:
+  snapshot-NN.png
+  snapshot-NN-kibana.png
+  snapshot-NN.csv
+  snapshot-NN.json
+- Export a complete historical batch and check its document count matches
+  snapshot_size to avoid partially indexed snapshots.
+- Retain actual capture timestamps, batch IDs and raw count data.
+- Stop only the child processes the runner started.
+- Generate a Markdown report based on actual observations.
+- Distinguish collected article totals from processed snapshot counts because
+  processing/indexing can lag ingestion.
+- Do not describe 30/60/90-second tests as 15/30/45-minute observations.
+- If no new stories arrive, unchanged plots are valid. Do not duplicate stories
+  merely to make plots change.
+
+PREVIOUS CONTROLLED VALIDATION RESULTS
+
+These describe the previous implementation, NOT evidence that your recreated
+code has passed. Rerun the checks.
+
+1. RSS parsing, acknowledged Kafka publishing, SQLite restart deduplication and
+   article/poll audit logs passed with a local HTTP fixture.
+
+2. Full Kafka → Spark NER → Kafka → Logstash → Elasticsearch test passed.
+
+Controlled text:
+Article smoke-1:
+"Barack Obama visited Paris. Barack Obama visited France."
+
+Article smoke-2:
+"Microsoft opened an office in London."
+
+Send smoke-1 twice with the same ID.
+
+Expected cumulative counts:
+barack obama: 2
+paris: 1
+france: 1
+microsoft: 1
+london: 1
+
+Then replay smoke-1 in a later micro-batch and add:
+Article smoke-3:
+"Microsoft is in London."
+
+Expected:
+barack obama: 2
+paris: 1
+france: 1
+microsoft: 2
+london: 2
+
+3. Restart Spark using the existing checkpoint, replay smoke-1 again, and add a
+   new article smoke-4 with "Microsoft is in London."
+
+Expected:
+barack obama: 2
+paris: 1
+france: 1
+microsoft: 3
+london: 3
+
+4. A complete local-fixture experiment captured results at actual elapsed times
+   30, 60 and 90 seconds. Its five expected entities each had counts 1, 2 and 3.
+   Real Kibana screenshots, PNG/CSV/JSON exports and an automatically generated
+   report were created. The report was clearly marked CONTROLLED TEST ONLY.
+
+CRITICAL HONESTY REQUIREMENT
+
+NO LIVE BBC-NEWS OBSERVATIONS WERE COLLECTED IN THE PREVIOUS SESSION.
+
+The previous results were controlled tests only. Do not fabricate or reuse
+their counts as live-news results. Collect real data and report actual
+timestamps, intervals, source coverage and limitations.
+
+REPORT CONTENTS
+
+- Source and polling method.
+- Actual observation period.
+- Initial RSS backlog versus newly discovered stories.
+- NER model, accepted labels and normalization.
+- Cumulative counting and duplicate/retry handling.
+- Top-10 figures at actual intervals.
+- A paragraph interpreting the observed leaders and changes.
+- Limits: model errors, aliases, title/summary repetition, source sampling,
+  processing lag, cumulative versus sliding-window counts.
+- Frequency does not establish sentiment or public opinion.
+
+WORKING PRACTICES
+
+- Keep all filesystem paths configurable.
+- Keep TLS, signatures and checksum verification enabled.
+- Reuse inherited cloud proxy and CA settings.
+- Spark/Ivy may require a writable cache and Java proxy properties derived from
+  inherited HTTPS_PROXY settings.
+- Do not copy secret values into code, logs, Git or documentation.
+- Inspect actual failures and fix setup issues rather than claiming readiness
+  from successful imports or container PIDs.
+- Keep controlled validation separate from live results.
+- Finish with the deliverable ZIP and commit/push to main.

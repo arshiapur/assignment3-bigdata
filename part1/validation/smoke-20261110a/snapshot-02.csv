@@ -1,0 +1,6 @@
+entity,label,count,batch_id
+barack obama,PERSON,2,2
+paris,GPE,1,2
+france,GPE,1,2
+microsoft,ORG,3,2
+london,GPE,3,2

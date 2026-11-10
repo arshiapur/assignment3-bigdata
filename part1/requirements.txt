@@ -1,0 +1,9 @@
+pyspark==4.0.1
+kafka-python==2.2.15
+spacy==3.8.7
+feedparser==6.0.11
+requests==2.32.5
+matplotlib==3.10.8
+playwright==1.56.0
+click==8.1.8
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

@@ -1,0 +1,12 @@
+{
+  "completed_at": "2026-11-10T04:24:06.016842+00:00",
+  "run_id": "smoke-20261110a",
+  "controlled": true,
+  "checks": [
+    "RSS acknowledgement and SQLite restart deduplication",
+    "entity occurrence counts",
+    "duplicate IDs across microbatches",
+    "checkpoint restart",
+    "real Kibana SVG bars"
+  ]
+}

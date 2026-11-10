@@ -1,0 +1,10 @@
+Services available
+PASS: local RSS -> acknowledged Kafka, clean text, audit logs, SQLite restart deduplication
+{"barack obama": 2, "france": 1, "london": 1, "microsoft": 1, "paris": 1}
+{"barack obama": 2, "france": 1, "london": 2, "microsoft": 2, "paris": 1}
+mkdir -p failed for path /home/agent/.config/matplotlib: [Errno 30] Read-only file system: '/home/agent/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-xsbvvs5f because there was an issue with the default path (/home/agent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Phase 1 passed with rendered Kibana bars
+{"barack obama": 2, "france": 1, "london": 3, "microsoft": 3, "paris": 1}
+Phase 2 passed with rendered Kibana bars

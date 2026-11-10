@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "unique_audited_articles": 31,
+  "entity_label_pairs": 77,
+  "entity_occurrences": 111,
+  "method": "Recompute the same pinned spaCy extraction from all unique audited source texts and compare to the final exported Spark snapshot. This checks pipeline coverage, not NER accuracy."
+}

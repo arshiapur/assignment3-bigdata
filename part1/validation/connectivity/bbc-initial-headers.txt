@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+date: Tue, 10 Nov 2026 04:16:20 GMT
+server: envoy
+
+HTTP/2 200 
+server: envoy
+x-local-cache: EXPIRED
+belfrage-cache-status: HIT
+content-type: text/xml; charset=utf-8
+bsig: 444e171c4e67d2e37e8b72421793da0d
+brequestid: b33e12ddcef2496d9347ae89450081c0
+bid: cedric
+req-svc-chain: BELFRAGE
+x-shared-cache: HIT
+cache-control: public, max-age=4
+expires: Tue, 10 Nov 2026 04:16:26 GMT
+date: Tue, 10 Nov 2026 04:16:22 GMT
+content-length: 24018
+timing-allow-origin: https://www.bbc.co.uk, https://www.bbc.com
+x-envoy-upstream-service-time: 981
+

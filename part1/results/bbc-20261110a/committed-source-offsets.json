@@ -1,0 +1,9 @@
+{
+  "batch_id": 0,
+  "commit_exists": true,
+  "source_end_offsets": {
+    "articles-bbc-20261110a": {
+      "0": 31
+    }
+  }
+}
