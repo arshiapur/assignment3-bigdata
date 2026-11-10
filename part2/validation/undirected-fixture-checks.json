@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "completed_at": "2026-11-10T05:05:38.771146+00:00",
+  "vertices_checked": 7,
+  "directed_edges": 10,
+  "weak_components": 3,
+  "total_undirected_triangles": 1,
+  "max_absolute_pagerank_error": 2.220446049250313e-16,
+  "checks": [
+    "all vertex indegrees/outdegrees",
+    "all vertex triangle counts",
+    "all component memberships",
+    "all finite-iteration GraphX PageRank values",
+    "all five top-result tables",
+    "graph totals"
+  ],
+  "reference": "NetworkX graph/triangles/components; independent scalar GraphX PageRank recurrence"
+}

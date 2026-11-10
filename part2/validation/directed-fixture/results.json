@@ -1,0 +1,133 @@
+{
+  "completed_at": "2026-11-10T05:02:36.641867+00:00",
+  "dataset": "CONTROLLED DIRECTED FIXTURE",
+  "input_semantics": "directed",
+  "parameters": {
+    "pagerank_iterations": 20,
+    "reset_probability": 0.15,
+    "component_semantics": "weak",
+    "triangle_semantics": "simple undirected projection",
+    "tie_break": "ascending numeric vertex ID; component representative is minimum vertex ID"
+  },
+  "graph_statistics": {
+    "vertices": 7,
+    "raw_edge_records": 8,
+    "duplicate_directed_records": 1,
+    "unique_self_loops_removed": 1,
+    "directed_edges": 6,
+    "simple_undirected_edges": 5,
+    "weak_components": 3,
+    "total_undirected_triangles": 1,
+    "pagerank_sum": 7.000000000000001,
+    "algorithms_elapsed_seconds": 32.46327423399998
+  },
+  "queries": {
+    "a_outdegree": [
+      {
+        "id": 2,
+        "outDegree": 2
+      },
+      {
+        "id": 3,
+        "outDegree": 2
+      },
+      {
+        "id": 1,
+        "outDegree": 1
+      },
+      {
+        "id": 5,
+        "outDegree": 1
+      },
+      {
+        "id": 4,
+        "outDegree": 0
+      }
+    ],
+    "b_indegree": [
+      {
+        "id": 1,
+        "inDegree": 2
+      },
+      {
+        "id": 2,
+        "inDegree": 1
+      },
+      {
+        "id": 3,
+        "inDegree": 1
+      },
+      {
+        "id": 4,
+        "inDegree": 1
+      },
+      {
+        "id": 6,
+        "inDegree": 1
+      }
+    ],
+    "c_pagerank": [
+      {
+        "id": 2,
+        "pagerank": 1.795646205916949,
+        "pagerank_probability": 0.2565208865595641
+      },
+      {
+        "id": 1,
+        "pagerank": 1.6488331162519139,
+        "pagerank_probability": 0.23554758803598766
+      },
+      {
+        "id": 3,
+        "pagerank": 1.1568502710997781,
+        "pagerank_probability": 0.16526432444282543
+      },
+      {
+        "id": 4,
+        "pagerank": 0.8851143011478522,
+        "pagerank_probability": 0.12644490016397886
+      },
+      {
+        "id": 6,
+        "pagerank": 0.7272931935920751,
+        "pagerank_probability": 0.10389902765601072
+      }
+    ],
+    "d_connected_components": [
+      {
+        "component_id": 1,
+        "size": 4
+      },
+      {
+        "component_id": 5,
+        "size": 2
+      },
+      {
+        "component_id": 7,
+        "size": 1
+      }
+    ],
+    "e_triangles": [
+      {
+        "id": 1,
+        "triangle_count": 1
+      },
+      {
+        "id": 2,
+        "triangle_count": 1
+      },
+      {
+        "id": 3,
+        "triangle_count": 1
+      },
+      {
+        "id": 4,
+        "triangle_count": 0
+      },
+      {
+        "id": 5,
+        "triangle_count": 0
+      }
+    ]
+  }
+}

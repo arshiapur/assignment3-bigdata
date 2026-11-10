@@ -1,0 +1,49 @@
+CS 6350 Assignment 3 — Part 2: SNAP Wiki-Vote
+
+{
+  "vertices": 7115,
+  "raw_edge_records": 103689,
+  "duplicate_directed_records": 0,
+  "unique_self_loops_removed": 0,
+  "directed_edges": 103689,
+  "simple_undirected_edges": 100762,
+  "weak_components": 24,
+  "total_undirected_triangles": 608389,
+  "pagerank_sum": 7115.000000000053,
+  "algorithms_elapsed_seconds": 93.38560554800006
+}
+
+a_outdegree
+{"id": 2565, "outDegree": 893}
+{"id": 766, "outDegree": 773}
+{"id": 11, "outDegree": 743}
+{"id": 457, "outDegree": 732}
+{"id": 2688, "outDegree": 618}
+
+b_indegree
+{"id": 4037, "inDegree": 457}
+{"id": 15, "inDegree": 361}
+{"id": 2398, "inDegree": 340}
+{"id": 2625, "inDegree": 331}
+{"id": 1297, "inDegree": 309}
+
+c_pagerank
+{"id": 4037, "pagerank": 32.77991867863669, "pagerank_probability": 0.004607156525458391}
+{"id": 15, "pagerank": 26.182664611751868, "pagerank_probability": 0.0036799247521787314}
+{"id": 6634, "pagerank": 25.5257481567155, "pagerank_probability": 0.0035875963677744643}
+{"id": 2625, "pagerank": 23.36408018482811, "pagerank_probability": 0.0032837779599195977}
+{"id": 2398, "pagerank": 18.5615043681846, "pagerank_probability": 0.002608784872548765}
+
+d_connected_components
+{"component_id": 3, "size": 7066}
+{"component_id": 7031, "size": 3}
+{"component_id": 7465, "size": 3}
+{"component_id": 8074, "size": 3}
+{"component_id": 2304, "size": 2}
+
+e_triangles
+{"id": 2565, "triangle_count": 30940}
+{"id": 1549, "triangle_count": 22003}
+{"id": 766, "triangle_count": 18204}
+{"id": 1166, "triangle_count": 17361}
+{"id": 2688, "triangle_count": 14220}

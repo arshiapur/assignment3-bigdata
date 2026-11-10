@@ -1,0 +1,15 @@
+{
+  "downloaded_at": "2026-11-10T05:02:41.912668+00:00",
+  "source_url": "https://snap.stanford.edu/data/wiki-Vote.txt.gz",
+  "dataset_page": "https://snap.stanford.edu/data/wiki-Vote.html",
+  "sha256": "7d3e53626e14b8b09fb3b396bece9d481ad606bd64ceab066349ff57d4ada7fc",
+  "compressed_bytes": 290339,
+  "gzip_crc_verified": true,
+  "checksum_provenance": "Pinned observed snapshot hash; not a publisher-signed checksum",
+  "published_statistics": {
+    "vertices": 7115,
+    "directed_edges": 103689,
+    "largest_weak_component_vertices": 7066,
+    "undirected_triangles": 608389
+  }
+}

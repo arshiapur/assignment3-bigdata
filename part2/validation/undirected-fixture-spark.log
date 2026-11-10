@@ -1,0 +1,229 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+:: loading settings :: url = jar:file:/workspace/work/assignment3-bigdata/part2/.venv/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /workspace/work/assignment3-bigdata/part2/cache/ivy/cache
+The jars for the packages stored in: /workspace/work/assignment3-bigdata/part2/cache/ivy/jars
+io.graphframes#graphframes-spark4_2.13 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-07536549-39f4-4ebd-a6fa-467b77fb5a20;1.0
+	confs: [default]
+	found io.graphframes#graphframes-spark4_2.13;0.10.0 in central
+	found io.graphframes#graphframes-graphx-spark4_2.13;0.10.0 in central
+:: resolution report :: resolve 484ms :: artifacts dl 5ms
+	:: modules in use:
+	io.graphframes#graphframes-graphx-spark4_2.13;0.10.0 from central in [default]
+	io.graphframes#graphframes-spark4_2.13;0.10.0 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-07536549-39f4-4ebd-a6fa-467b77fb5a20
+	confs: [default]
+	0 artifacts copied, 2 already retrieved (0kB/11ms)
+26/11/10 05:03:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/11/10 05:03:30 INFO SparkContext: Running Spark version 4.0.1
+26/11/10 05:03:30 INFO SparkContext: OS info Linux, 6.18.57, amd64
+26/11/10 05:03:30 INFO SparkContext: Java version 21.0.13
+26/11/10 05:03:30 INFO ResourceUtils: ==============================================================
+26/11/10 05:03:30 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/11/10 05:03:30 INFO ResourceUtils: ==============================================================
+26/11/10 05:03:30 INFO SparkContext: Submitted application: CS6350Part2GraphFrames
+26/11/10 05:03:30 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/11/10 05:03:30 INFO ResourceProfile: Limiting resource is cpu
+26/11/10 05:03:30 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/11/10 05:03:30 INFO SecurityManager: Changing view acls to: agent
+26/11/10 05:03:30 INFO SecurityManager: Changing modify acls to: agent
+26/11/10 05:03:30 INFO SecurityManager: Changing view acls groups to: agent
+26/11/10 05:03:30 INFO SecurityManager: Changing modify acls groups to: agent
+26/11/10 05:03:30 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: agent groups with view permissions: EMPTY; users with modify permissions: agent; groups with modify permissions: EMPTY; RPC SSL disabled
+26/11/10 05:03:31 INFO Utils: Successfully started service 'sparkDriver' on port 45797.
+26/11/10 05:03:31 INFO SparkEnv: Registering MapOutputTracker
+26/11/10 05:03:31 INFO SparkEnv: Registering BlockManagerMaster
+26/11/10 05:03:31 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/11/10 05:03:31 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/11/10 05:03:31 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/11/10 05:03:31 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e3a5df30-ea83-40eb-afc1-ba523a4a0cca
+26/11/10 05:03:31 INFO SparkEnv: Registering OutputCommitCoordinator
+26/11/10 05:03:32 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/11/10 05:03:32 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+26/11/10 05:03:32 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+26/11/10 05:03:32 INFO SparkContext: Added JAR file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar at spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:32 INFO SparkContext: Added JAR file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar at spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:32 INFO SparkContext: Added file file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar at file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:32 INFO Utils: Copying /workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-spark4_2.13-0.10.0.jar
+26/11/10 05:03:32 INFO SparkContext: Added file file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar at file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:32 INFO Utils: Copying /workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar
+26/11/10 05:03:32 INFO SecurityManager: Changing view acls to: agent
+26/11/10 05:03:32 INFO SecurityManager: Changing modify acls to: agent
+26/11/10 05:03:32 INFO SecurityManager: Changing view acls groups to: agent
+26/11/10 05:03:32 INFO SecurityManager: Changing modify acls groups to: agent
+26/11/10 05:03:32 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: agent groups with view permissions: EMPTY; users with modify permissions: agent; groups with modify permissions: EMPTY; RPC SSL disabled
+26/11/10 05:03:33 INFO Executor: Starting executor ID driver on host 7555968d5a0a
+26/11/10 05:03:33 INFO Executor: OS info Linux, 6.18.57, amd64
+26/11/10 05:03:33 INFO Executor: Java version 21.0.13
+26/11/10 05:03:33 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/11/10 05:03:33 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@bb468bb for default.
+26/11/10 05:03:33 INFO Executor: Fetching file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:33 INFO Utils: /workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar has been previously copied to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar
+26/11/10 05:03:33 INFO Executor: Fetching file:///workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:33 INFO Utils: /workspace/work/assignment3-bigdata/part2/cache/ivy/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar has been previously copied to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-spark4_2.13-0.10.0.jar
+26/11/10 05:03:33 INFO Executor: Fetching spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:33 INFO TransportClientFactory: Successfully created connection to 7555968d5a0a/172.26.91.254:45797 after 37 ms (0 ms spent in bootstraps)
+26/11/10 05:03:33 INFO Utils: Fetching spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/fetchFileTemp13918105094803912528.tmp
+26/11/10 05:03:33 INFO Utils: /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/fetchFileTemp13918105094803912528.tmp has been previously copied to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar
+26/11/10 05:03:33 INFO Executor: Adding file:/tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-graphx-spark4_2.13-0.10.0.jar to class loader default
+26/11/10 05:03:33 INFO Executor: Fetching spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar with timestamp 1794287010538
+26/11/10 05:03:33 INFO Utils: Fetching spark://7555968d5a0a:45797/jars/io.graphframes_graphframes-spark4_2.13-0.10.0.jar to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/fetchFileTemp11580453093661696029.tmp
+26/11/10 05:03:33 INFO Utils: /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/fetchFileTemp11580453093661696029.tmp has been previously copied to /tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-spark4_2.13-0.10.0.jar
+26/11/10 05:03:33 INFO Executor: Adding file:/tmp/spark-5be7e586-a4d1-42f8-981a-9cb87613d46d/userFiles-79e5ff87-7e13-4283-979c-4b15c2c21743/io.graphframes_graphframes-spark4_2.13-0.10.0.jar to class loader default
+26/11/10 05:03:33 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46279.
+26/11/10 05:03:33 INFO NettyBlockTransferService: Server created on 7555968d5a0a:46279
+26/11/10 05:03:33 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/11/10 05:03:33 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 7555968d5a0a, 46279, None)
+26/11/10 05:03:33 INFO BlockManagerMasterEndpoint: Registering block manager 7555968d5a0a:46279 with 434.4 MiB RAM, BlockManagerId(driver, 7555968d5a0a, 46279, None)
+26/11/10 05:03:33 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 7555968d5a0a, 46279, None)
+26/11/10 05:03:33 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 7555968d5a0a, 46279, None)
+Graph loaded: 7 vertices, 10 directed edges
+Running GraphFrames PageRank
+26/11/10 05:03:59 WARN ShippableVertexPartitionOps: Joining two VertexPartitions with different indexes is slow.
+26/11/10 05:03:59 WARN ShippableVertexPartitionOps: Joining two VertexPartitions with different indexes is slow.
+26/11/10 05:04:09 WARN PageRank: Returned DataFrame is persistent and materialized!
+Running GraphFrames weak connected components
+26/11/10 05:04:18 WARN ConnectedComponents$: Returned DataFrame is persistent and materialized!
+Running GraphFrames triangle counts on the simple undirected projection
+26/11/10 05:04:22 WARN AggregateMessages: Returned DataFrame is persistent and materialized!
+26/11/10 05:04:30 WARN TriangleCount$: Returned DataFrame is persistent and materialized!
+{
+  "completed_at": "2026-11-10T05:05:05.336718+00:00",
+  "dataset": "CONTROLLED UNDIRECTED FIXTURE",
+  "input_semantics": "undirected",
+  "parameters": {
+    "pagerank_iterations": 20,
+    "reset_probability": 0.15,
+    "component_semantics": "weak",
+    "triangle_semantics": "simple undirected projection",
+    "tie_break": "ascending numeric vertex ID; component representative is minimum vertex ID"
+  },
+  "graph_statistics": {
+    "vertices": 7,
+    "raw_edge_records": 8,
+    "duplicate_directed_records": 1,
+    "unique_self_loops_removed": 1,
+    "directed_edges": 10,
+    "simple_undirected_edges": 5,
+    "weak_components": 3,
+    "total_undirected_triangles": 1,
+    "pagerank_sum": 7.0,
+    "algorithms_elapsed_seconds": 69.10910937300014
+  },
+  "queries": {
+    "a_outdegree": [
+      {
+        "id": 3,
+        "outDegree": 3
+      },
+      {
+        "id": 1,
+        "outDegree": 2
+      },
+      {
+        "id": 2,
+        "outDegree": 2
+      },
+      {
+        "id": 4,
+        "outDegree": 1
+      },
+      {
+        "id": 5,
+        "outDegree": 1
+      }
+    ],
+    "b_indegree": [
+      {
+        "id": 3,
+        "inDegree": 3
+      },
+      {
+        "id": 1,
+        "inDegree": 2
+      },
+      {
+        "id": 2,
+        "inDegree": 2
+      },
+      {
+        "id": 4,
+        "inDegree": 1
+      },
+      {
+        "id": 5,
+        "inDegree": 1
+      }
+    ],
+    "c_pagerank": [
+      {
+        "id": 3,
+        "pagerank": 1.6696459555604235,
+        "pagerank_probability": 0.2385208507943462
+      },
+      {
+        "id": 5,
+        "pagerank": 1.1382113821138213,
+        "pagerank_probability": 0.1626016260162602
+      },
+      {
+        "id": 6,
+        "pagerank": 1.1382113821138213,
+        "pagerank_probability": 0.1626016260162602
+      },
+      {
+        "id": 1,
+        "pagerank": 1.1196837933556887,
+        "pagerank_probability": 0.15995482762224125
+      },
+      {
+        "id": 2,
+        "pagerank": 1.1196837933556887,
+        "pagerank_probability": 0.15995482762224125
+      }
+    ],
+    "d_connected_components": [
+      {
+        "component_id": 1,
+        "size": 4
+      },
+      {
+        "component_id": 5,
+        "size": 2
+      },
+      {
+        "component_id": 7,
+        "size": 1
+      }
+    ],
+    "e_triangles": [
+      {
+        "id": 1,
+        "triangle_count": 1
+      },
+      {
+        "id": 2,
+        "triangle_count": 1
+      },
+      {
+        "id": 3,
+        "triangle_count": 1
+      },
+      {
+        "id": 4,
+        "triangle_count": 0
+      },
+      {
+        "id": 5,
+        "triangle_count": 0
+      }
+    ]
+  }
+}

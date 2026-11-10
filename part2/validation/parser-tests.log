@@ -1,0 +1,8 @@
+test_comments_blanks_and_whitespace (test_parser.ParserTests.test_comments_blanks_and_whitespace) ... ok
+test_malformed_or_out_of_range_edges_fail (test_parser.ParserTests.test_malformed_or_out_of_range_edges_fail) ... ok
+test_optional_vertex_list (test_parser.ParserTests.test_optional_vertex_list) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

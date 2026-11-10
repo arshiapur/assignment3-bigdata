@@ -1,0 +1,47 @@
+CS 6350 Assignment 3 — Part 2: CONTROLLED UNDIRECTED FIXTURE
+
+{
+  "vertices": 7,
+  "raw_edge_records": 8,
+  "duplicate_directed_records": 1,
+  "unique_self_loops_removed": 1,
+  "directed_edges": 10,
+  "simple_undirected_edges": 5,
+  "weak_components": 3,
+  "total_undirected_triangles": 1,
+  "pagerank_sum": 7.0,
+  "algorithms_elapsed_seconds": 69.10910937300014
+}
+
+a_outdegree
+{"id": 3, "outDegree": 3}
+{"id": 1, "outDegree": 2}
+{"id": 2, "outDegree": 2}
+{"id": 4, "outDegree": 1}
+{"id": 5, "outDegree": 1}
+
+b_indegree
+{"id": 3, "inDegree": 3}
+{"id": 1, "inDegree": 2}
+{"id": 2, "inDegree": 2}
+{"id": 4, "inDegree": 1}
+{"id": 5, "inDegree": 1}
+
+c_pagerank
+{"id": 3, "pagerank": 1.6696459555604235, "pagerank_probability": 0.2385208507943462}
+{"id": 5, "pagerank": 1.1382113821138213, "pagerank_probability": 0.1626016260162602}
+{"id": 6, "pagerank": 1.1382113821138213, "pagerank_probability": 0.1626016260162602}
+{"id": 1, "pagerank": 1.1196837933556887, "pagerank_probability": 0.15995482762224125}
+{"id": 2, "pagerank": 1.1196837933556887, "pagerank_probability": 0.15995482762224125}
+
+d_connected_components
+{"component_id": 1, "size": 4}
+{"component_id": 5, "size": 2}
+{"component_id": 7, "size": 1}
+
+e_triangles
+{"id": 1, "triangle_count": 1}
+{"id": 2, "triangle_count": 1}
+{"id": 3, "triangle_count": 1}
+{"id": 4, "triangle_count": 0}
+{"id": 5, "triangle_count": 0}
